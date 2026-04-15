@@ -338,6 +338,24 @@ ui <- fluidPage(
             ),
             div(
                 class = "results-grid",
+		tags$details(
+		    class = "dataset-details",
+		    tags$summary("About the dataset"),
+		    div(
+			class = "dataset-copy",
+			p("Single-cell CoCut&Tag bone marrow hematopoietic stem cell histone modification browser."),
+			div(
+			    class = "dataset-figure",
+			    tags$img(
+				src = "data/fig_dataset_diagram.png",
+				alt = "Dataset diagram for the hematopoietic histone modification browser"
+			    )
+			    ),
+			p(
+			    "TBD: the dataset details, including experimental design, data processing, and analysis methods will be described here. For now, please refer to the associated publication (cite the preprint) or contact the lab for more information."
+			)
+		    )
+		),
                 div(
                     class = "plot-card",
                     div(
@@ -368,26 +386,8 @@ ui <- fluidPage(
                         )
                     ),
                     plotOutput("p_umap", height = "760px")
-                ),
-                tags$details(
-                    class = "dataset-details",
-                    tags$summary("About the dataset"),
-                    div(
-                        class = "dataset-copy",
-                        p("Single-cell CoCut&Tag bone marrow hematopoietic stem cell histone modification browser."),
-                        div(
-                            class = "dataset-figure",
-                            tags$img(
-                                src = "data/fig_dataset_diagram.png",
-                                alt = "Dataset diagram for the hematopoietic histone modification browser"
-                            )
-                        ),
-                        p(
-                            "TBD: the dataset details, including experimental design, data processing, and analysis methods will be described here. For now, please refer to the associated publication (cite the preprint) or contact the lab for more information."
-                        )
-                    )
                 )
-            )
+	    )
         ),
         div(
             class = "app-footer",
