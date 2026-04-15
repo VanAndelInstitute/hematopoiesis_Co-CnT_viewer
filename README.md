@@ -65,7 +65,3 @@ Rscript app.R
 
 For development with autoreload:
 
-```bash
-Rscript dev_app.R
-```
-
