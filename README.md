@@ -2,7 +2,7 @@
 
 This repository contains a Shiny app for exploring single-cell CoCut&Tag bone marrow data across lineage pseudotime trajectories. The app projects single cell CoCut&Tag gene score onto pseudotime and UMAP space, and supports export of plots and raw tables.
 
-![Demo]("./data/demo.gif")
+<img width="800" height="484" alt="demo" src="https://github.com/user-attachments/assets/fe5df9d0-58c1-4156-a289-32ff4a2981aa" />
 
 ## Features
 
