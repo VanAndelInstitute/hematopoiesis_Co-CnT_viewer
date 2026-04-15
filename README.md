@@ -68,5 +68,3 @@ For development with autoreload:
 Rscript dev_app.R
 ```
 
-The app is currently configured to bind to host `23.121.124.95` on port `4324`. If you want to run it on another machine or locally, edit `app.R`.
-
